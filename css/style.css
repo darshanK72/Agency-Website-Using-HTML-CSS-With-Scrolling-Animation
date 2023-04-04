@@ -1,20 +1,156 @@
-/* Reset */
-*{
+/* ============================ START =========================== */
+
+/* ------------------- Global ------------------ */
+
+:root {
+    --darkblue: #242A56;
+    --lightblue: #749BE7;
+    --bg: #EFF2FF;
+    --gradient: linear-gradient(to bottom right, #2a305f, #242a5652);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Commons */
+/* --------------- Typography ----------------- */
 
-/* Typography */
-
-html{
+/* Font */
+html {
     font-size: 18px;
 }
 
-body{
-    font-family:"Poppins",sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
+/* Headings */
+h1,h2,h3,h4{
+    font-weight: 600;
+    color: var(--darkblue);
+}
+
+h1{
+    font-size: 3.388rem;
+}
+
+h2{
+    font-size: 2.889rem;
+}
+
+h3{
+    font-size: 2.188rem;
+}
+
+h4{
+    font-size: 1.4rem;
+}
+/* Paragrahps */
+p{
+    font-weight: 500;
+    color: var(--lightblue);
+    font-size: 1rem;
+}
+
+/* Anchor */
+
+/* Lables */
+
 /* Buttons */
+
+/* ----------------- Commons ------------------ */
+
+/* Section */
+section{
+    padding: 60px 0;
+}
+
+/* ----------------- Sections ----------------- */
+
+header{
+    width: 100%;
+    background-image: url("../img/header-bg.png");
+    background-position:top;
+    background-size: cover;
+    height: 100vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    height: 16%;
+}
+
+header nav .logo{
+    height: 3rem;
+}
+
+header nav .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:var(--bg);
+}
+
+header .content{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    height: 84%;
+    width: 60%;
+
+}
+
+header .content .container{
+    /* height: 100%; */
+    /* display: flex;
+    align-items: center; */
+    height: fit-content;
+}
+
+header .content h1,header .content h3,header .content p{
+    color: var(--bg);
+}
+
+header .content h1{
+    margin: 1rem 0;
+    line-height: 1.35;
+}
+
+header .content a{
+    text-decoration: none;
+    color: var(--bg);
+    background-color: var(--lightblue);
+    padding: 0.5rem 1.3rem;
+    margin: 1rem 0;
+    display: inline-block;
+    font-size: 1.288rem;
+    border-radius: 0.7rem;
+}
+
+
+
+/* --------------- Responsiveness ------------- */
+
+/* Desktop & TV (1280px to 1440px) */
+
+/* Laptop (769px to 1280px) */
+
+/* Tablet (426px 768px) */
+
+/* Mobile (320px to 425px) */
+
+
+/* ========================== END ========================= */
