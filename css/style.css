@@ -33,7 +33,8 @@ h1,h2,h3,h4{
 }
 
 h1{
-    font-size: 3.388rem;
+    font-size: 3.2rem;
+    letter-spacing: -2px;
 }
 
 h2{
@@ -90,6 +91,8 @@ header nav .logo{
 
 header nav .logo img{
     height: 100%;
+    object-fit: cover;
+    object-position:top;
 }
 
 header nav ul{
@@ -110,6 +113,7 @@ header .content{
     align-items: center;
     height: 84%;
     width: 60%;
+    min-width: 600px;
 
 }
 
@@ -125,7 +129,7 @@ header .content h1,header .content h3,header .content p{
 }
 
 header .content h1{
-    margin: 1rem 0;
+    margin: 0.7rem 0;
     line-height: 1.35;
 }
 
@@ -140,6 +144,13 @@ header .content a{
     border-radius: 0.7rem;
 }
 
+#req{
+    color: var(--bg);
+    background-color: var(--lightblue);
+    padding: 0.5rem 1.3rem; 
+    border-radius: 0.7rem;
+}
+
 
 
 /* --------------- Responsiveness ------------- */
@@ -148,7 +159,42 @@ header .content a{
 
 /* Laptop (769px to 1280px) */
 
+
+
 /* Tablet (426px 768px) */
+@media screen and (max-width:768px) {
+
+    html{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    header{
+        /* height: fit-content; */
+    }
+    header .content{
+        width: 100%;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    header nav{
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul{
+        display: none;
+    }
+
+
+}
 
 /* Mobile (320px to 425px) */
 
